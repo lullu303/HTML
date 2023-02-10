@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22선택자. html</title>
+    <style type="text/css">
+        /*1. 태그 선택자*/
+        div {
+            color:red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22pt;
+        }
+        /*2. 클래스 선택자: 앞에 마침표(.)를 붙인다.
+            . 클래스명{속성명: 값....}
+            class가 c1인 요소를 선택해서
+            글자색: 
+            안쪽여백:1em;
+            바깥여백:1.2em;
+            배경색:
+            */
+        .c1 {
+            color: orangered;
+            margin: 1em;
+            padding: 1.2em;
+            background-color: whitesmoke;
+        }
+        .c2 {
+            border: thick grey dashed;
+        }
+        /*id가 dv1인 요소를 선택해서
+          배경색: 
+          글자색: 
+          글자크기: 1.5em;
+          */
+        #dv1 {
+            background-color: whitesmoke;
+            color:gold;
+            font-size: 1.5em;
+        }
+        #dv2 {
+            color:green;
+            font-weight: bold;
+        }
+        /* 우선순위: 아이디선택자>클래스 선택자>태그 선택자 */
+        /*링크 선택해서 
+            글자 스타일 italic
+            글자색: 
+        */
+        a{
+            font-style: italic;
+            color: blue;
+            text-decoration: none; 
+        }
+        /* div 안에 있는 a태그에 대해 배경색 navy
+            글자색: white
+        */
+        div a {
+            color:whitesmoke;
+            background-color: navy;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- id(identity): 한 페이지 내에서 unique한 값을 가져야 한다.
+         class: 한 페이지 내에서 동일한 이름의 클래스가 여러개 나와도 된다.
+        -->
+         <h1>ID선택자(selector), class 선택자, 태그 선택자</h1>
+
+    <div id="dv1">div1 #dv1</div>
+    <div id="dv2" class="c1">div2.c1 #dv2</div>
+    <div class="c1 c2">div3.c1 c2</div>
+    <div class="c2">div4</div>
+    <div id="dv5">div5 #dv5</div>
+    <hr color="tomato">
+    이것은 <a href="http://www.daum.net">단순링크</a>입니다. 
+    <br>
+    <div>
+        div 태그 안에서 
+        <h2><a href="21인라인스타일정의.html">CSS3.0 예제</a>에 링크를 겁니다.</h2>
+    </div>
+</body>
+</html>
+<!-- 22선택자. html -->
