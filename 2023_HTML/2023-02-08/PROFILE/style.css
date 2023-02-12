@@ -11,7 +11,7 @@ h1{
     font-weight: lighter;
 }
 .intro_bg{
-    background-image: url("images/manhattan_1440x900.jpg");
+    background-image: url("images/intro.png");
     width:100%;
     height: 418px;
 }
@@ -49,25 +49,59 @@ h1{
     justify-content: flex-end;
     line-height: 86px;
     width: calc(1280px - 300px);
-    color:#fff;
 }
-.nav>li{
-    margin-left:84px ;
-}
-.nav>li>a{
+.nav > li {
+    margin-left:84px;
+  }
+  
+  .nav > li > a {
     color: #fff;
-}
+  }
+  
+  .amount{
+    position: relative;
+    top:-66px;
+    display: flex;
+    width:1280px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  .amount > li {
+    flex: 1;
+    height: 132px;
+  }
+  .amount > li > div {
+    text-align: center;
+    margin-top:37px;
+    height:57px;
+  }
+
 .intro_text{
     width: 100%;
     margin: 100px auto 231px auto;
-    background: magenta;
     text-align: center;
 }
-
+.intro_text > h1,
 .intro_text > h4 {
     color: #fff;
 }
+/* main_text0 */
 
+.main_text0{
+    width: 100%;
+    height:601px;
+    margin-top:-132px;
+    background: #f1f2f3;
+  }
+  .main_text0 > h1{
+    padding-top:116px;
+    text-align: center;
+  }
+  .main_text0 > .contents1 {
+    text-align: center;
+  }
+  
 body {
     
     background: #fff;
